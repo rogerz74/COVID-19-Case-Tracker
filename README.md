@@ -9,7 +9,7 @@ This React Application requests and draws data from both the Worldometer and Joh
 
 # How to Run this Project
 
-In the project directory, you can run:
+All the files must be downloaded initially. Then in the project directory, you can run:
 
 ### `npm start`
 
