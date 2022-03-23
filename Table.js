@@ -1,24 +1,28 @@
 import React from "react";
-import "./Table.css";
-import numeral from "numeral";
+import "./InfoBox.css";
+import { Card, CardContent, Typography } from '@mui/material';
 
-function Table({ countries }) {
+function InfoBox({ title, cases, isRed, active, total, ...props }) {
   return (
-    <div className="table">
-      {countries.map((country) => (
-        <tr>
-          <td>{country.country}</td>
-          <td>
-
-            <strong>{numeral(country.cases).format("0,0")}</strong>
-          </td>
-
-        </tr>
-
-      ))}
-      
-    </div>
+    <Card
+      onClick={props.onClick}
+      className={`infoBox ${active && "infoBox--selected"} ${
+        isRed && "infoBox--red"
+      }`}
+    >
+      <CardContent>
+        <Typography className="infoxBox__title" color="textSecondary">
+          {title}
+        </Typography>
+        <h2 className={`infoBox__cases ${!isRed && "infoBox__cases--green"}`}>
+          {cases}
+        </h2>
+        <Typography className="infoBox__total" color="textSecondary">
+          {total} Total
+        </Typography>
+      </CardContent>
+    </Card>
   );
 }
 
-export default Table;
+export default InfoBox;
