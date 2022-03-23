@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+# What is it?
+This COVID-19 Tracking App is a React application which models and graphs the spread of COVID-19 through multiple visualization tools. Users can specify toggle between all the countries in the world and access live COVID-19 data representation on a table, on a line graph, and through a map.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Why is it relevant?
+This COVID-19 Tracking App allows users to better understand the spread of COVID-19 around the world by providing accurate and up-to-date COVID-19 data. Through different visual representations, users can become more informed of the trends of COVID-19 in different countries around the world.
 
-## Available Scripts
+# How does it work?
+This React Application requests and draws data from both the Worldometer and John Hopkins University through a third-party API called disease.sh. Our modelling approached is executed through the use of React Leaflet and Charts.js, which produces a graphically and map-based representation of relevant COVID data such as the the number of new cases, recoveries and deaths. Materials UI components such as "Card" are also brought in as a complimentary data visualization tool through data boxes and tables. Users can interact with the table and find each countries's respective COVID-19 data. Users can also click on the pins on the map to view an interative text, which displays both historical and current COVID-19 information.
+
+# How to Run this Project
 
 In the project directory, you can run:
 
@@ -21,50 +26,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
+The build is minified and the filenames include the hashes. Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
