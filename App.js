@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { MenuItem, 
-  FormControl, 
-  Select, 
-  Card, 
-  CardContent } from '@mui/material';
+import { MenuItem, FormControl, Select, Card, CardContent } from '@mui/material';
 import InfoBox from "./InfoBox";
 import LineGraph from "./LineGraph";
 import Table from "./Table";
@@ -37,10 +33,12 @@ const App = () => {
         .then((response) => response.json())
         .then((data) => {
           const countries = data.map((country) => ({
+            
             name: country.country,
             value: country.countryInfo.iso2,
           }));
           let sortedData = sortData(data);
+        
           setCountries(countries);
           setMapCountries(data);
           setTableData(sortedData);
@@ -75,6 +73,7 @@ const App = () => {
         <div className="app__header">
           <h1>COVID-19 Tracker</h1>
           <h2>Designed by Roger Zhang</h2>
+    
           <FormControl className="app__dropdown">
             <Select
               variant="outlined"
@@ -90,6 +89,7 @@ const App = () => {
         </div>
         <div className="app__stats">
           <InfoBox
+
             onClick={(e) => setCasesType("cases")}
             title="Coronavirus Cases"
             isRed
@@ -98,6 +98,7 @@ const App = () => {
             total={numeral(countryInfo.cases).format("0.0a")}
           />
           <InfoBox
+
             onClick={(e) => setCasesType("recovered")}
             title="Recovered"
             active={casesType === "recovered"}
@@ -105,6 +106,7 @@ const App = () => {
             total={numeral(countryInfo.recovered).format("0.0a")}
           />
           <InfoBox
+
             onClick={(e) => setCasesType("deaths")}
             title="Deaths"
             isRed
@@ -119,14 +121,19 @@ const App = () => {
           center={mapCenter}
           zoom={mapZoom}
               />
+            
+            
       </div>
       <Card className="app__right">
         <CardContent>
           <div className="app__information">
+            
             <h3>Total Accumlated Cases by Country</h3>
             <Table countries={tableData} />
+              
             <h3>Number of {casesType} in the World</h3>
             <LineGraph casesType={casesType} />
+              
           </div>
         </CardContent>
       </Card>
