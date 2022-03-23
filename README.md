@@ -8,8 +8,8 @@ This COVID-19 Tracking App allows users to better understand the spread of COVID
 This React Application requests and draws data from both the Worldometer and John Hopkins University through a third-party API called disease.sh. Our modelling approached is executed through the use of React Leaflet and Charts.js, which produces a graphically and map-based representation of relevant COVID data such as the the number of new cases, recoveries and deaths. Materials UI components such as "Card" are also brought in as a complimentary data visualization tool through data boxes and tables. Users can interact with the table and find each countries's respective COVID-19 data. Users can also click on the pins on the map to view an interative text, which displays both historical and current COVID-19 information.
 
 # Visual Screenshots of the Project Running
-![Alt text](rogerz74/COVID-19-Case-Tracker/COVID_APP_SS1.png?raw=true "Demo 1")
-![Alt text](rogerz74/COVID-19-Case-Tracker/COVID_APP_SS2.png?raw=true "Demo 2")
+![COVID_APP_SS1](https://user-images.githubusercontent.com/70820857/159729522-86d219bd-70d4-44ef-80c1-0693c08b081f.png)
+![COVID_APP_SS2](https://user-images.githubusercontent.com/70820857/159729666-6bbf9f40-00d0-4b7a-baed-440fb8fb910e.png)
 
 # How to Run this Project
 
